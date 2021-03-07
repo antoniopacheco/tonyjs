@@ -1,0 +1,4 @@
+{
+  "*.+(ts|tsx)": ["eslint --cache --fix", "npm run test:staged"],
+  "*.+(json|css)": ["prettier --write"]
+}

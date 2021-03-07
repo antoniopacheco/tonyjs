@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -50,6 +51,8 @@ const useStyles = makeStyles((theme: Theme) => ({
 
 const AboutMe: FC = () => {
     const classes = useStyles();
+    const { t } = useTranslation();
+
     return (
         <Card className={classes.root} variant="outlined">
             <CardContent className={classes.content}>
@@ -60,9 +63,15 @@ const AboutMe: FC = () => {
                 />
                 <div className={classes.description}>
                     <div className={classes.regards}>
-                        Hi, I'm Antonio Pacheco
+                        <Trans i18nKey="aboutMe.part1">
+                            Hi, I'm Antonio Pacheco
+                        </Trans>
                     </div>
-                    <div>senior solutions engineer @ capital-group</div>
+                    <div>
+                        <Trans i18nKey="aboutMe.part2">
+                            senior solutions engineer @ capital-group
+                        </Trans>
+                    </div>
                     <div>
                         <ul className={classes.socialList}>
                             <li>
@@ -104,10 +113,10 @@ const AboutMe: FC = () => {
                         </ul>
                         <Button
                             target="blank"
-                            href="/resume.pdf"
+                            href={`${t('aboutMe.resumeLink')}`}
                             variant="outlined"
                         >
-                            Resume
+                            <Trans i18nKey="aboutMe.resume">Resume</Trans>
                         </Button>
                     </div>
                 </div>

@@ -1,0 +1,19 @@
+{
+    "menu": {
+        "home": "Home"
+    },
+    "aboutMe": {
+        "part1": "Hi, I'm Antonio Pacheco",
+        "part2": "senior solutions engineer @ capital-group",
+        "resume": "resume",
+        "resumeLink": "/resume.pdf"
+    },
+    "skills": {
+        "mySkills": "My skills",
+        "tools": "Libraries, frameworks & tools"
+    },
+    "currentLanguage": {
+        "short": "en",
+        "full": "english"
+    }
+}

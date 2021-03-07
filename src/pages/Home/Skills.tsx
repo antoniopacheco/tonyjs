@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
@@ -10,9 +11,10 @@ import deepPurple from '@material-ui/core/colors/deepPurple';
 import indigo from '@material-ui/core/colors/indigo';
 
 const Skills: FC = () => {
+    const { t } = useTranslation();
     return (
         <Card variant="outlined">
-            <CardHeader title="My skills" />
+            <CardHeader title={t('skills.mySkills')} />
             <CardContent>
                 <p>HTML</p>
                 <BarChart barColor={red[600]} percentage={95} />

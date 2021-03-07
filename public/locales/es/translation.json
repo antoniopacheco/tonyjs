@@ -1,0 +1,19 @@
+{
+    "menu": {
+        "home": "Inicio"
+    },
+    "aboutMe": {
+        "part1": "Hola, soy Antonio Pacheco",
+        "part2": "Ingeniero de software @ Capital group",
+        "resume": "C.V.",
+        "resumeLink": "/resume_es.pdf"
+    },
+    "skills": {
+        "mySkills": "Habilidades",
+        "tools": "Librerias, frameworks y herramientas"
+    },
+    "currentLanguage": {
+        "short": "es",
+        "full": "español"
+    }
+}
